@@ -1,0 +1,75 @@
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(lavender, lavender);
+    box-shadow: 0 0 10px currentColor;
+    animation: anything 0s linear infinite;
+    position: fixed;
+    background-color: aqua;
+}
+
+@keyframes anything {
+    10% {
+        transform: translateX(60px);
+    }
+    30% {
+        transform: translateX(-180px)
+    }
+    60% {
+        transform: translateX(160px);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.night-sky {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    animation: anything 0s linear infinite;
+    position: fixed;
+    animation: rotatesss 10000ms linear infinite;
+    transform-origin: 50%;
+    position: absolute;
+}
+
+
+/* @keyframes rotatesss {
+    80% {
+        transform: rotateY(250deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+} */
+
+@media (max-width: 992px) {
+    .night-sky {
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+        animation: anything 0s linear infinite;
+        position: absolute;
+        animation: rotatesss 10000ms linear infinite;
+        transform-origin: 50%;
+    }
+}
+
+.spinner {
+    color: white;
+}
